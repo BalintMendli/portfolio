@@ -7,22 +7,28 @@ html {
   margin: 0;
   padding: 0;
   height: 100%;
+  font-family: 'Karla', sans-serif;
+  color: #828282;
+  font-size: 1.1em;
+  background-color: #f8fbfc;
 }
 
 header {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #fff;
+  background-color: #f8fbfc;
+  z-index: 1;
 }
 
 #header-inner {
   display: flex;
   justify-content: space-between;
-  padding: 15px 30px;
+  padding: 20px 0px;
   width: 900px;
   margin-left: auto;
   margin-right: auto;
+  border-bottom: 1px solid #f4f4f4;
 }
 
 ul {
@@ -33,7 +39,9 @@ ul {
 
 li {
   display: inline;
-  padding-left: 15px;
+  margin-left: 15px;
+  cursor: pointer;
+  opacity: 0.8;
 }
 
 main {
@@ -45,5 +53,37 @@ main {
 
 section {
   min-height: 100vh;
-  margin-top: 100px;
+  margin-top: 240px;
+}
+
+h1 {
+  display: inline-block;
+  vertical-align: top;
+  padding-bottom: 0.65em;
+  border-bottom: 2px solid;
+  opacity: 0.8;
+}
+
+#about-h1,
+#menu-about {
+  color: #b17b89;
+  border-color: #b17b89;
+}
+
+#work-h1,
+#menu-work {
+  color: #82bb79;
+  border-color: #82bb79;
+}
+
+#portfolio-h1,
+#menu-portfolio {
+  color: #f5b841;
+  border-color: #f5b841;
+}
+
+#contact-h1,
+#menu-contact {
+  color: #6564db;
+  border-color: #6564db;
 }
