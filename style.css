@@ -11,6 +11,7 @@ html {
   color: #828282;
   font-size: 1.1em;
   background-color: #f8fbfc;
+  width: 100%;
 }
 
 header {
@@ -28,13 +29,14 @@ header {
   width: 900px;
   margin-left: auto;
   margin-right: auto;
-  border-bottom: 1px solid #f4f4f4;
+  border-bottom: 1px solid #ebebeb;
 }
 
 ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 
 li {
@@ -42,13 +44,18 @@ li {
   margin-left: 15px;
   cursor: pointer;
   opacity: 0.8;
+  padding-bottom: 21px;
+  font-size: 0.8em;
+  font-weight: bold;
 }
 
 main {
   margin-top: 100px;
   margin-left: auto;
   margin-right: auto;
-  width: 900px;
+  width: 100%;
+  max-width: 900px;
+  display: block;
 }
 
 section {
@@ -86,4 +93,8 @@ h1 {
 #menu-contact {
   color: #6564db;
   border-color: #6564db;
+}
+
+.underline {
+  border-bottom: 1px solid;
 }
