@@ -6,11 +6,34 @@ $(document).ready(function() {
       {
         scrollTop: $('#' + this.id.split('-')[1]).offset().top - 240
       },
-      500,
-      function() {
-        $('.menu-item').removeClass('underline');
-        $(menuItem).addClass('underline');
-      }
+      500
     );
   });
+
+  var positions = {};
+
+  function updatePositions() {
+    for (var i = 0; i <= $('section').length - 1; i++) {
+      positions[$('section')[i].id] =
+        $('#' + $('section')[i].id).position().top - 20;
+    }
+  }
+
+  updatePositions();
+
+  function menuSelect() {
+    var currPos = $(window).scrollTop();
+    var currSect = 'about';
+    for (var elem in positions) {
+      if (currPos > positions[elem]) currSect = elem;
+    }
+    $('.menu-item').removeClass('underline');
+    $('#menu-' + currSect).addClass('underline');
+  }
+
+  menuSelect();
+
+  $(window).scroll(menuSelect);
+
+  $(window).resize(updatePositions);
 });

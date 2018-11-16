@@ -71,10 +71,14 @@ h1 {
   opacity: 0.8;
 }
 
+strong {
+  color: #525252;
+}
+
 #about-h1,
 #menu-about {
-  color: #b17b89;
-  border-color: #b17b89;
+  color: #e1515d;
+  border-color: #e1515d;
 }
 
 #work-h1,
