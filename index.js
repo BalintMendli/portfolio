@@ -4,9 +4,11 @@ $(document).ready(function() {
 
     $('html, body').animate(
       {
-        scrollTop: $('#' + this.id.split('-')[1]).offset().top - 240
+        scrollTop:
+          $('#' + this.id.split('-')[1]).offset().top -
+          $(window).height() * 0.25
       },
-      500
+      400
     );
   });
 

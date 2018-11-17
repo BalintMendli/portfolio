@@ -10,8 +10,16 @@ html {
   font-family: 'Karla', sans-serif;
   color: #828282;
   font-size: 1.1em;
+  line-height: 1.2em;
+  letter-spacing: 0.02em;
   background-color: #f8fbfc;
   width: 100%;
+}
+
+@media (max-width: 640px) {
+  body {
+    font-size: 0.9rem;
+  }
 }
 
 header {
@@ -26,7 +34,8 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 20px 0px;
-  width: 900px;
+  max-width: 900px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   border-bottom: 1px solid #ebebeb;
@@ -44,9 +53,23 @@ li {
   margin-left: 15px;
   cursor: pointer;
   opacity: 0.8;
-  padding-bottom: 21px;
+  padding-bottom: 23px;
   font-size: 0.8em;
   font-weight: bold;
+}
+
+@media (max-width: 640px) {
+  #header-inner {
+    flex-direction: column;
+    align-items: center;
+  }
+  #title {
+    margin-bottom: 20px;
+  }
+  li {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
 }
 
 main {
@@ -58,9 +81,25 @@ main {
   display: block;
 }
 
+@media (max-width: 960px) {
+  main,
+  header {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+}
+
+@media (max-width: 640px) {
+  main,
+  header {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
 section {
   min-height: 100vh;
-  margin-top: 240px;
+  margin-top: 25vh;
 }
 
 h1 {
