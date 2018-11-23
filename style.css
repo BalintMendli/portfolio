@@ -41,14 +41,14 @@ header {
   border-bottom: 1px solid #ebebeb;
 }
 
-ul {
+header ul {
   list-style: none;
   margin: 0;
   padding: 0;
   height: 100%;
 }
 
-li {
+header li {
   display: inline;
   margin-left: 15px;
   cursor: pointer;
@@ -73,7 +73,6 @@ li {
 }
 
 main {
-  margin-top: 100px;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
@@ -99,7 +98,8 @@ main {
 
 section {
   min-height: 100vh;
-  margin-top: 25vh;
+  max-width: 600px;
+  padding-top: 25vh;
 }
 
 h1 {
@@ -108,10 +108,13 @@ h1 {
   padding-bottom: 0.65em;
   border-bottom: 2px solid;
   opacity: 0.8;
+  margin-bottom: 60px;
 }
 
-strong {
+strong,
+h3 {
   color: #525252;
+  font-weight: bold;
 }
 
 #about-h1,
@@ -120,14 +123,14 @@ strong {
   border-color: #e1515d;
 }
 
-#work-h1,
-#menu-work {
+#tools-h1,
+#menu-tools {
   color: #82bb79;
   border-color: #82bb79;
 }
 
-#portfolio-h1,
-#menu-portfolio {
+#projects-h1,
+#menu-projects {
   color: #f5b841;
   border-color: #f5b841;
 }
@@ -140,4 +143,33 @@ strong {
 
 .underline {
   border-bottom: 1px solid;
+}
+
+.links {
+  padding-bottom: 35px;
+  border-bottom: 1px solid #ebebeb;
+  margin-bottom: 50px;
+}
+
+img {
+  border-radius: 3px;
+  border: 1px solid #ebebeb;
+}
+
+i {
+  color: #525252;
+
+  margin-right: 1.5em;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  color: #525252;
+  font-weight: bold;
+  font-size: 0.85em;
+}
+
+a:hover {
+  text-decoration: underline;
 }
